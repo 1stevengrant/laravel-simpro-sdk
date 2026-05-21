@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace StevenGrant\SimproSdk;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use StevenGrant\SimproSdk\Commands\SimproSdkCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class SimproSdkServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('laravel-simpro-sdk')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_simpro_sdk_table')
+            ->hasCommand(SimproSdkCommand::class);
     }
 }
