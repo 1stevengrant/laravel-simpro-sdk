@@ -37,8 +37,7 @@
     },
     "autoload": {
         "psr-4": {
-            "StevenGrant\\SimproSdk\\": "src/",
-            "StevenGrant\\SimproSdk\\Database\\Factories\\": "database/factories/"
+            "StevenGrant\\SimproSdk\\": "src/"
         }
     },
     "autoload-dev": {
